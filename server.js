@@ -22,7 +22,7 @@ Jawab dengan bahasa Indonesia yang ramah dan singkat (maksimal 3-4 kalimat), mud
 // ============================================================
 
 // Model gratis dari Google Gemini (kuota harian cukup besar, tanpa kartu kredit)
-const GEMINI_MODEL = "gemini-2.5-flash";
+const GEMINI_MODEL = "gemini-3-flash";
 
 // Ini alamat yang nanti dipanggil dari Unity
 app.post("/chat", async (req, res) => {
