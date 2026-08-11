@@ -49,6 +49,12 @@ app.post("/chat", async (req, res) => {
     );
 
     const chatData = await chatResponse.json();
+
+    // 🔍 LOG SEMENTARA untuk debugging — hapus lagi setelah masalah ketemu.
+    // Ini akan muncul di tab "Logs" pada dashboard Render Anda.
+    console.log("Status HTTP dari Gemini (chat):", chatResponse.status);
+    console.log("Isi respons Gemini (chat):", JSON.stringify(chatData));
+
     const replyText =
       chatData.candidates?.[0]?.content?.parts?.[0]?.text ||
       "Maaf, aku belum bisa menjawab itu sekarang.";
