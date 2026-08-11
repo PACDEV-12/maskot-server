@@ -84,6 +84,11 @@ app.post("/chat", async (req, res) => {
       );
 
       const ttsData = await ttsResponse.json();
+
+      // 🔍 LOG SEMENTARA untuk debugging — hapus lagi setelah masalah ketemu.
+      console.log("Status HTTP dari Gemini (TTS):", ttsResponse.status);
+      console.log("Isi respons Gemini (TTS):", JSON.stringify(ttsData));
+
       const audioPart = ttsData.candidates?.[0]?.content?.parts?.[0]?.inlineData;
 
       if (audioPart?.data) {
