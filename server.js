@@ -76,7 +76,7 @@ app.post("/chat", async (req, res) => {
             generationConfig: {
               responseModalities: ["AUDIO"],
               speechConfig: {
-                voiceConfig: { prebuiltVoiceConfig: { voiceName: "Kore" } },
+                voiceConfig: { prebuiltVoiceConfig: { voiceName: "Charon" } },
               },
             },
           }),
