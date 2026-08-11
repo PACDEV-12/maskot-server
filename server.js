@@ -22,7 +22,7 @@ Jawab dengan bahasa Indonesia yang ramah dan singkat (maksimal 3-4 kalimat), mud
 // ============================================================
 
 const GEMINI_KEY = process.env.GEMINI_API_KEY;
-const CHAT_MODEL = "gemini-2.5-flash";
+const CHAT_MODEL = "gemini-3.5-flash";
 const TTS_MODEL = "gemini-2.5-flash-preview-tts";
 
 app.post("/chat", async (req, res) => {
